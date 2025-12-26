@@ -1,2 +1,5 @@
 plans/
 .env
+
+# Auto Claude data directory
+.auto-claude/

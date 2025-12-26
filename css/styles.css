@@ -442,13 +442,13 @@ a {
 .about-images {
     flex: 1;
     position: relative;
-    min-height: 400px;
+    min-height: 450px;
 }
 
 .about-img {
     position: absolute;
-    width: 240px;
-    height: 280px;
+    width: 200px;
+    height: 240px;
     object-fit: cover;
     border-radius: 16px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
@@ -457,13 +457,19 @@ a {
 .about-img-1 {
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .about-img-2 {
-    bottom: 0;
-    right: 0;
-    z-index: 1;
+    top: 80px;
+    left: 140px;
+    z-index: 2;
+}
+
+.about-img-3 {
+    top: 160px;
+    left: 280px;
+    z-index: 3;
 }
 
 @media (max-width: 768px) {
@@ -478,22 +484,29 @@ a {
 
     .about-images {
         width: 100%;
-        min-height: 320px;
+        min-height: 380px;
         display: flex;
         justify-content: center;
     }
 
     .about-img {
-        width: 180px;
-        height: 220px;
+        width: 140px;
+        height: 180px;
     }
 
     .about-img-1 {
-        left: calc(50% - 160px);
+        top: 0;
+        left: calc(50% - 180px);
     }
 
     .about-img-2 {
-        right: calc(50% - 160px);
+        top: 60px;
+        left: calc(50% - 70px);
+    }
+
+    .about-img-3 {
+        top: 120px;
+        left: calc(50% + 40px);
     }
 }
 
@@ -942,6 +955,7 @@ button:focus-visible {
 }
 
 .intl-content {
+    display: block;
     max-width: 800px;
     margin: 40px auto;
     padding: 0 20px;
